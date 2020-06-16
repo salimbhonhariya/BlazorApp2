@@ -22,11 +22,3 @@ jobs:
         html_path: ${{ env.PUBLISH_DIR }}/index.html
         base_href: /BlazorApp2/
 
-    - name: GitHub Pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v1.5.1
-      with:
-        target_branch: gh-pages
-        build_dir: ${{ env.PUBLISH_DIR }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
