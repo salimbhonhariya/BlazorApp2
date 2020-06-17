@@ -19,6 +19,6 @@ jobs:
     - name: Rewrite base href
       uses: salimbhonhariya/ghaction-rewrite-base-href@v1
       with:
-        html_path: ${{ env.PUBLISH_DIR }}/index.html
+        html_path: ${{ env.PUBLISH_DIR }}/index.razor
         base_href: /BlazorApp2/
 
